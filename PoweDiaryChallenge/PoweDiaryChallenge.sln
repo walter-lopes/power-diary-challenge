@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerDiaryChallenge", "PowerDiaryChallenge\PowerDiaryChallenge.csproj", "{9242CDCF-2928-4B14-A020-F016BD1C0D41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerDiaryChallenge.Tests", "PowerDiaryChallenge.Tests\PowerDiaryChallenge.Tests.csproj", "{50805C63-13E6-465F-B814-DB810304EAAB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerDiaryChallenge.Api", "PowerDiaryChallenge.Api\PowerDiaryChallenge.Api.csproj", "{7FF5228A-8081-40F9-B8FC-1D8464C91872}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9242CDCF-2928-4B14-A020-F016BD1C0D41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9242CDCF-2928-4B14-A020-F016BD1C0D41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9242CDCF-2928-4B14-A020-F016BD1C0D41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9242CDCF-2928-4B14-A020-F016BD1C0D41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50805C63-13E6-465F-B814-DB810304EAAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50805C63-13E6-465F-B814-DB810304EAAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50805C63-13E6-465F-B814-DB810304EAAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50805C63-13E6-465F-B814-DB810304EAAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FF5228A-8081-40F9-B8FC-1D8464C91872}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FF5228A-8081-40F9-B8FC-1D8464C91872}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FF5228A-8081-40F9-B8FC-1D8464C91872}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FF5228A-8081-40F9-B8FC-1D8464C91872}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
