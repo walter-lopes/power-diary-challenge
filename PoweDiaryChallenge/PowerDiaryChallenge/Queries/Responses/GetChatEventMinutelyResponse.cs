@@ -1,3 +1,4 @@
+using System.Text;
 using PowerDiaryChallenge.Domain;
 
 namespace PowerDiaryChallenge.Queries.Responses;
@@ -13,6 +14,20 @@ public class GetChatEventMinutelyResponse
     }
     
     public IEnumerable<GetChatEventMinutelyItemResponse> Events { get; set; }
+    
+    public string GenerateMessage()
+    {
+        var sb = new StringBuilder();
+        foreach (var @event in Events)
+        {
+            sb.Append(@event.Minute);
+            sb.Append(" ");
+            sb.Append(@event.Message);
+            sb.AppendLine(@event.Message);
+        }
+
+        return sb.ToString();
+    }
 }
 
 public class GetChatEventMinutelyItemResponse

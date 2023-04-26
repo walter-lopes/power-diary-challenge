@@ -7,7 +7,7 @@ public class HighFiveAnotherUserEventTest
     [Test]
     public void ShouldInitAllValuesCorrect()
     {
-        var @event = new HighFiveAnotherUserEvent("Bob", "Kate");
+        var @event = new HighFiveAnotherUserEvent("Bob", "Kate", DateTime.Now);
         
         Assert.Multiple(() =>
         {

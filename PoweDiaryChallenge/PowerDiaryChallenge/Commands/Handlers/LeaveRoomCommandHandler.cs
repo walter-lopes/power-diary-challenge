@@ -15,7 +15,7 @@ public class LeaveRoomCommandHandler : ICommandHandler<LeaveRoomCommand>
     
     public void Handle(LeaveRoomCommand command)
     {
-        var leaveRoomEvent= new LeaveRoomEvent(command.User);
+        var leaveRoomEvent= new LeaveRoomEvent(command.User, DateTime.Now);
         
         _chatEventRepository.Add(leaveRoomEvent);
     }

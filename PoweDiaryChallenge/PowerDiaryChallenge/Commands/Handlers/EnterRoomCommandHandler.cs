@@ -15,7 +15,7 @@ public class EnterRoomCommandHandler : ICommandHandler<EnterRoomCommand>
 
     public void Handle(EnterRoomCommand command)
     {
-        var commentEvent = new EnterRoomEvent(command.User);
+        var commentEvent = new EnterRoomEvent(command.User, DateTime.Now);
         
         _chatEventRepository.Add(commentEvent);
     }

@@ -7,7 +7,7 @@ public class LeaveRoomEventTest
     [Test]
     public void ShouldInitAllValuesCorrect()
     {
-        var @event = new LeaveRoomEvent("Bob");
+        var @event = new LeaveRoomEvent("Bob", DateTime.Now);
         
         Assert.Multiple(() =>
         {

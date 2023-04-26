@@ -9,7 +9,7 @@ public class CommentEventTest
     [Test]
     public void ShouldInitAllValuesCorrect()
     {
-        var commentEvent = new CommentEvent("Bob", "'oh yes!'");
+        var commentEvent = new CommentEvent("Bob", "'oh yes!'", DateTime.Now);
         
         Assert.Multiple(() =>
         {

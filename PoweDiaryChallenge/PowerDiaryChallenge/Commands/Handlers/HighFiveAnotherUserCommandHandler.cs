@@ -15,7 +15,7 @@ public class HighFiveAnotherUserCommandHandler : ICommandHandler<HighFiveAnother
     
     public void Handle(HighFiveAnotherUserCommand command)
     {
-        var leaveRoomEvent= new HighFiveAnotherUserEvent(command.User, command.ReceiverUser);
+        var leaveRoomEvent= new HighFiveAnotherUserEvent(command.User, command.ReceiverUser, DateTime.Now);
         
         _chatEventRepository.Add(leaveRoomEvent);
     }

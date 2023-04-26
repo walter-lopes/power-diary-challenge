@@ -4,11 +4,11 @@ namespace PowerDiaryChallenge;
 
 public abstract class ChatEvent
 {
-    protected ChatEvent(ChatEventType type, string user)
+    protected ChatEvent(ChatEventType type, string user, DateTime createdAt)
     {
         Type = type;
         User = user;
-        CreatedAt = DateTime.Now;
+        CreatedAt = createdAt;
     }
     
     public ChatEventType Type { get; protected set; }

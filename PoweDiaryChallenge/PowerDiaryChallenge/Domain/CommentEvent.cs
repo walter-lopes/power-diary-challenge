@@ -2,7 +2,7 @@ namespace PowerDiaryChallenge.Domain;
 
 public class CommentEvent : ChatEvent
 {
-    public CommentEvent(string user, string comment) : base(ChatEventType.Comment, user)
+    public CommentEvent(string user, string comment, DateTime createdAt) : base(ChatEventType.Comment, user, createdAt)
     {
         Comment = comment;
     }

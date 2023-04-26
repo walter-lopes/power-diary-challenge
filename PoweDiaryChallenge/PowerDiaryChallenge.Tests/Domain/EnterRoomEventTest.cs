@@ -7,7 +7,7 @@ public class EnterRoomEventTest
     [Test]
     public void ShouldInitAllValuesCorrect()
     {
-        var @event = new EnterRoomEvent("Bob");
+        var @event = new EnterRoomEvent("Bob", DateTime.Now);
         
         Assert.Multiple(() =>
         {

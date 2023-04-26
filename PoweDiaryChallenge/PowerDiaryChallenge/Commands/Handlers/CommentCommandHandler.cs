@@ -15,7 +15,7 @@ public class CommentCommandHandler : ICommandHandler<CommentCommand>
     
     public void Handle(CommentCommand command)
     {
-        var commentEvent = new CommentEvent(command.User, command.Comment);
+        var commentEvent = new CommentEvent(command.User, command.Comment, DateTime.Now);
         
        _chatEventRepository.Add(commentEvent);
     }
