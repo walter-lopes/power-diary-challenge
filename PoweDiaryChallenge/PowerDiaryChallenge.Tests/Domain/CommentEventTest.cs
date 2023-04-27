@@ -4,8 +4,6 @@ namespace PowerDiaryChallenge.Tests.Domain;
 
 public class CommentEventTest
 {
-
-    
     [Test]
     public void ShouldInitAllValuesCorrect()
     {

@@ -1,4 +1,4 @@
-namespace PowerDiaryChallenge.Commands.Dispachers;
+namespace PowerDiaryChallenge.Commands.Dispatchers;
 
 public interface ICommandDispatcher
 {

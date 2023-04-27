@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using PowerDiaryChallenge.Commands;
-using PowerDiaryChallenge.Commands.Dispachers;
+using PowerDiaryChallenge.Commands.Dispatchers;
 using PowerDiaryChallenge.Queries;
 using PowerDiaryChallenge.Queries.Dispatchers;
 using PowerDiaryChallenge.Queries.Responses;
@@ -9,12 +9,12 @@ namespace PowerDiaryChallenge.Api.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-public class ChatEventController : ControllerBase
+public class ChatController : ControllerBase
 {
     private readonly IQueryDispatcher _queryDispatcher;
     private readonly ICommandDispatcher _commandDispatcher;
     
-    public ChatEventController(IQueryDispatcher queryDispatcher, ICommandDispatcher commandDispatcher)
+    public ChatController(IQueryDispatcher queryDispatcher, ICommandDispatcher commandDispatcher)
     {
         _queryDispatcher = queryDispatcher;
         _commandDispatcher = commandDispatcher;
@@ -58,7 +58,7 @@ public class ChatEventController : ControllerBase
         var query = new GetChatEventMinutelyQuery(DateTime.Now.AddDays(-1), DateTime.Now);
         var response =  _queryDispatcher.Query<GetChatEventMinutelyQuery, GetChatEventMinutelyResponse>(query);
 
-        return Ok(response);
+        return Ok(new { message = response.GenerateMessage() });
     }
     
     [HttpGet("hourly")]
@@ -67,7 +67,7 @@ public class ChatEventController : ControllerBase
         var query = new GetChatEventHourlyQuery(DateTime.Now.AddDays(-1), DateTime.Now);
         var response = _queryDispatcher.Query<GetChatEventHourlyQuery, GetChatEventHourlyResponse>(query);
 
-        return Ok(response);
+        return Ok(new { message = response.GenerateMessage() });
     }
     
 }

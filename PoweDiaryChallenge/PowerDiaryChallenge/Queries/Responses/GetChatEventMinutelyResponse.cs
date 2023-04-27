@@ -20,10 +20,9 @@ public class GetChatEventMinutelyResponse
         var sb = new StringBuilder();
         foreach (var @event in Events)
         {
-            sb.Append(@event.Minute);
-            sb.Append(" ");
+            sb.Append($"{@event.Minute}: ");
             sb.Append(@event.Message);
-            sb.AppendLine(@event.Message);
+            sb.AppendLine();
         }
 
         return sb.ToString();
@@ -50,7 +49,7 @@ public class GetChatEventMinutelyItemResponse
                 var chatEvent = @event as CommentEvent;
                 return $"{chatEvent?.User} comments: '{chatEvent?.Comment}'";
             case ChatEventType.EnterRoom:
-                return $"{@event.User} entered";
+                return $"{@event.User} enters the room";
             case ChatEventType.LeaveRoom:
                 return $"{@event.User} leaves";
             case ChatEventType.HighFiveAnotherUser:

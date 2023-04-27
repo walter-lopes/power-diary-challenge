@@ -1,6 +1,6 @@
 using PowerDiaryChallenge.Commands.Handlers;
 using PowerDiaryChallenge.Commands;
-using PowerDiaryChallenge.Commands.Dispachers;
+using PowerDiaryChallenge.Commands.Dispatchers;
 using PowerDiaryChallenge.Queries;
 using PowerDiaryChallenge.Queries.Dispatchers;
 using PowerDiaryChallenge.Queries.Handlers;

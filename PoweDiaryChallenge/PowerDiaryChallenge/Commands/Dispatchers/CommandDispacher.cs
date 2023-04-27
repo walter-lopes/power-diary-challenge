@@ -1,8 +1,7 @@
-using System.Windows.Input;
 using Microsoft.Extensions.DependencyInjection;
 using PowerDiaryChallenge.Commands.Handlers;
 
-namespace PowerDiaryChallenge.Commands.Dispachers;
+namespace PowerDiaryChallenge.Commands.Dispatchers;
 
 public class CommandDispatcher : ICommandDispatcher
 {
