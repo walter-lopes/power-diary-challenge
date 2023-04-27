@@ -29,7 +29,7 @@ User can:
 - .NET 7 must be installed.
 - Into a base directory run:
 
-``` dotnet run --project PowerDiaryChallenge.Api/PowerDiaryChallenge.Api.csproj ``
+``` dotnet run --project PowerDiaryChallenge.Api/PowerDiaryChallenge.Api.csproj ```
 
 Access swagger api page: http://localhost:5244/swagger/index.html
 
