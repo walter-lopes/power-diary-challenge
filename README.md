@@ -25,6 +25,14 @@ User can:
 - comment
 - view the current day aggregated minute per minute or hourly
 
+### Run
+- .NET 7 must be installed.
+- Into a base directory run:
+
+``` dotnet run --project PowerDiaryChallenge.Api/PowerDiaryChallenge.Api.csproj ``
+
+Access swagger api page: http://localhost:5244/swagger/index.html
+
 ### Endpoints
 
 Enter Room
