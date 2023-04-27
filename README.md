@@ -20,7 +20,7 @@ For demo purposes we are using a InMemory data storage in our ChatEventRepositor
 User can:
 
 - enter the room
-- leaver the room
+- leave the room
 - high five another user
 - comment
 - view the current day aggregated minute per minute or hourly
@@ -52,8 +52,16 @@ View history minute per minute
 ```GET /Chat/minutely```
 
 
-View history houyly
+View history hourly
 
 ```/Chat/hourly```
+
+
+### Improvements
+
+
+Of course the source code need some adjustments, what we can do for future improvements is:
+
+- Create a separate builder for our messages, if the demand of type views increases.
 
 
